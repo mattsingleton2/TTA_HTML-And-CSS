@@ -1,0 +1,31 @@
+:root {
+    --main-bg-color: #211103;
+    --secondary-bg-color: #3D1308;
+    --lowlight: #7B0D1E;
+    --secondary: #9F2042;
+    --primary: #F8E5EE;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-bg-color);
+}
+
+.nav {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50px;
+}
+
+.nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
+    color:var(--primary);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: var(--secondary);
+    transform: scale(1.75);
+}
