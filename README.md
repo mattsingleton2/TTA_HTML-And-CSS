@@ -14,3 +14,6 @@ This contains basic HTML files with a javascript file to indicate how to link th
 
 ### WebProject
 This contains the tutorial web project that was guided on TTA. I've modified it to be about Memphis Table Tennis instead of the typical space station.
+
+### One-Page Website
+This contains an assignment I did for a one-page website. HTML / CSS only without use of libraries or other crutches. 
