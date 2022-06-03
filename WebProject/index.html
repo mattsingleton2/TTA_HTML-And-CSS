@@ -4,21 +4,22 @@
 <head>
     <title>Memphis Table Tennis Club</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/photo_style.css">
 </head>
 
 <body>
     <!-- Navigation -->
-    <div>
-        <div>
-            <ul>
-                <a href="#home" id="link">
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home">
                     <li>HOME</li>
                 </a>
-                <a href="#gallery" id="link">
+                <a href="#gallery">
                     <li>GALLERY</li>
                 </a>
-                <a href="#join" id="link">
+                <a href="#join">
                     <li>JOIN US</li>
                 </a>
             </ul>
@@ -28,18 +29,18 @@
 
     <!-- HOME -->
     <div id="home">
-        <div>
-            <div>
-                <span>Welcome to Memphis Table Tennis Club</span>
+        <div class="container">
+            <div class="text-center">
+                <span class="head-main">Memphis Table Tennis Club</span>
             </div>
         </div>
     </div>
     <!-- END HOME -->
     <!-- GALLERY -->
-    <section>
-        <div id="gallery">
+    <section id="gallery">
+        <div class="container">
             <h1>Gallery</h1>
-            <div>
+            <div class="flex-container">
 
                 <!-- PHOTO-CONTAINER 1 -->
                 <div class="photo-container">
@@ -165,24 +166,27 @@
 
     <!-- JOIN US -->
     <section>
-        <div id="join">
-            <div>
-                <h1>Join us</h1>
-                <div>
+        <div class="container" id="join">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Join us!</h1>
+                <div class="join">
                     <h2><span>Interested in learning more?</span>
                         <br />Sign up with us today!
                     </h2>
-                    <p>
+                    <p class="join-text">
                         Please provide us with your basic contact information.
                     </p>
-                    <div>
+                    <div class="form-join">
                         <form action="" method="post">
-                            <input class="join" type="text" value="First Name">
-                            <input class="join" type="text" value="Last Name">
-                            <input class="join" type="text" value="Email Address">
-                            <input class="join" type="text" value="Phone Number">
+                            <input class="join" type="text" value="" placeholder="Last Name">
+                            <input class="join" type="text" value="" placeholder="Email Address">
+                            <input class="join" type="text" value="" placeholder="Phone Number">
+                            <input class="join" type="text" value="" placeholder="First Name">
                             <div class="form-spacer">
                                 <label class="terms">Terms and Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
                             </div>
                         </form>
                     </div>
@@ -193,7 +197,7 @@
     <!-- END JOIN US -->
 
     <!-- FOOTER -->
-    <div>
+    <div id="footer">
         www.memphistabletennisclub.com &nbsp;|&nbsp; &copy; 2022
     </div>
     <!-- END FOOTER -->
