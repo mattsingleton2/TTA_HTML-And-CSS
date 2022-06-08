@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <title>Final Challenges</title>
+  </head>
+  <body>
+
+    <!-- Challenge 1: Using HTML and CSS, center an image. Apply a CSS filter to the image. Round the edges of the image. -->
+    <!-- Challenge 4: Use text to overlay an image. -->
+    <div class="image-filtered text-center head-main">Diablo Immortal Dailies & Weeklies</div>
+
+    <div class="container text-center my-3">
+
+        <!-- Challenge 3: Create a table with HTML. Create a border, add padding, and add a background color in the top row with CSS. -->
+        <!-- Challenge 5: Create a fixed HTML & CSS Navbar. Use CSS to style it with a background color, a font color, and a hover effect.-->
+        <!-- Challenge 8: Create an image overlay fade using CSS and HTML. -->
+        <!-- NOTE: While I was working on the challenges, I wanted to make them my own, so instead of Home/About/Contact, I've used the days of the weeks as fixed-point links in the document that will link to those id's. I used specific CSS Selectors and transformations as a means of advancing this challenge.-->
+        <table class="day-display">
+            <thead>Events per Day
+            <tr>
+                <th><a href="#sunday">Sunday</a></th>
+                <th><a href="#monday">Monday</a></th>
+                <th><a href="#tuesday">Tuesday</a></th>
+                <th><a href="#wednesday">Wednesday</a></th>
+                <th><a href="#thursday">Thursday</a></th>
+                <th><a href="#friday">Friday</a></th>
+                <th><a href="#saturday">Saturday</a></th>
+            </tr>
+            <tbody>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+            </tbody>
+            </thead>
+        </table>
+
+        <!-- Challenge 6: Create a two-column layout and style it with CSS (specifically a font-color). Specify the height & Width of the columns. I did a little bootstrap work here to add the border, but the column / row specifications and CSS are HTML driven. -->
+        <div class="row my-5">
+            <div class="column border-right border-top">
+                <!-- Column #1 -->
+                <h3 class="text-center left-col pt-3">DAILIES</h3>
+                <p class="text-left text-center">Here's a quick example on finding your dailies.</p>
+                <!-- Challenge 9: Embed a muted, autoplaying video with HTML -->
+                <video autoplay muted loop width="480" height="300" controls>
+                    <source src="./img/dailies_example.mp4" type="video/mp4">
+                    Your browser does not support this video tag.
+                </video>
+            </div>
+            <div class="column border-top">
+                <!-- Column #2 -->
+                <h3 class="text-center right-col pt-3">WEEKLIES</h3>
+                <p class="text-center text-right">This is an example of text in the other column.</p>
+                <!-- Challenge 10: Create a video with a text overlay -->
+                <div class="video-container">
+                    <video autoplay muted loop width="480" height="300" controls>
+                        <source src="./img/dailies_example.mp4" type="video/mp4">
+                        Your browser does not support this video tag.
+                    </video>
+                    <div class="video-cover"><br>Weeklies <br>coming<br> soon</div>
+                </div>
+            </div>
+        </div>
+        <!-- Challenge 2: Using HTML, create a footer. Center all text in the footer using CSS, and bold the text.-->
+        <footer>
+            <p class="text-center"><small><strong>Website designed by Matt Singleton&reg;</strong></small></p>
+        </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
