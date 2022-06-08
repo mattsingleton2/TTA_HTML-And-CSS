@@ -51,7 +51,7 @@
     }
 
     .day-display th:hover {
-        background-color: #0000ff;
+        background-color:rgba(188,19,19,0.73);
         transform: scale(1.5);
     }
 
