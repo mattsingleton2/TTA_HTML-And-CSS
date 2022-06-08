@@ -301,13 +301,16 @@ figure figcaption{
     width: 100%;
     padding: 10px 0;
     background: none;
-    border: none;
-    border-bottom: 1px solid #666;
+    border: 1px solid #666;
+    border-radius: 25px;
+    padding-left: 10px;
+    margin: 1px;
     color: #ddd;
     font-size: 14px;
     text-transform: uppercase;
     outline: none;
     transition: border-color .2s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .app-form-control::placeholder {
