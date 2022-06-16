@@ -98,13 +98,13 @@ footer {
         font-size: 20px;
         text-align: center;
         position: relative;
-        -webkit-animation: moveNavText 1.5s;
-        animation: moveNavText 1.5s;
+        -webkit-animation: fadeNavText 10.5s;
+        animation: fadeNavText 10.5s;
     }
 
-    @keyframes moveNavText {
-        from {top: -100vw;}
-        to {top: 0vw;}
+    @keyframes fadeNavText {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 
     @media screen and (max-width: 576px) {
