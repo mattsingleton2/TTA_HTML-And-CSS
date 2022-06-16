@@ -1,45 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Let's Work Together</title>
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    </head>
-    <!-- Body start -->
-    <body>
 
-        <!-- Navbar Start -->
-        <div class="Navbar">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact Me</a>
-        </div>
-        <br>
-        <br>
-        <!-- Navbar End-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Let's Work Together</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<!-- Body start -->
 
-        <!-- Background Video Start -->
-        <div id="home">
-            <video autoplay muted loop id="Background-Video">
-                <source src="./img/background.mp4" type="video/mp4">
-                <!-- Display a message if the video fails to run or isn't supported-->
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-        <!-- Background Video End -->
+<body>
 
-        <!-- Video Text -->
-        <div class="Video-Text">
-            <h1 class="white-text">I'm Matt. Let's work together.</h1>
-            <strong>
-                <p class="center">
-                    <q>We’ve taken to saying, “It’s programming if ‘clever’ is a compliment, but it’s software engineering if ‘clever’ is an accusation.</q>
-                    <br> <small>-Titus Winters,  Software Engineering at Google: Lessons Learned from Programming Over Time</small>
-                </p>
-            </strong>
+    <!-- Navbar Start -->
+    <div class="Navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact Me</a>
+    </div>
+    <br>
+    <br>
+    <!-- Navbar End-->
+
+    <!-- Background Video Start -->
+    <div id="home">
+        <video autoplay muted loop id="Background-Video">
+            <source src="./img/background.mp4" type="video/mp4">
+            <!-- Display a message if the video fails to run or isn't supported-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <!-- Background Video End -->
+
+    <!-- Video Text -->
+    <div class="Video-Text">
+        <h1 class="white-text">Hi, I'm Matt. Let's work together.</h1>
+        <strong>
+            <p class="center">
+                <q>We’ve taken to saying, “It’s programming if ‘clever’ is a compliment, but it’s software engineering
+                    if ‘clever’ is an accusation.</q>
+                <br> <small>-Titus Winters, Software Engineering at Google: Lessons Learned from Programming Over
+                    Time</small>
+            </p>
+        </strong>
+    </div>
+    <!-- End Video Text-->
+
+    <!-- About section -->
+    <div class="Row" id="about">
+        <!-- Left Image -->
+        <div class="Column_2">
+            <img src="./img/intro.png" alt="Introduction Image - Matt & Jenna">
         </div>
-        <!-- End Video Text-->
-    </body>
+        <!-- About content -->
+        <div class="Column_1">
+            <h1>Who I am</h1>
+            <p>
+                I am a software developer who loves to problem-solve, with extensive experience as a business analyst
+                working at United Recovery & Remarketing.
+                <br>
+                I play chess, practice kendo, participate in local tech meet-ups, and love to spend time with my wife,
+                Jenna, and step-daughter, Evee. I want to work hard to do well for them!
+                <br>
+                I am working towards graduating from <a href="https://www.learncodinganywhere.com" target="_blank">The
+                    Tech Academy</a>'s Software Developer Boot Camp, where I'm training in the following web and
+                programming languages: HTML, CSS, JavaScript, SQL, C#, .NET, Python, and more.
+                <br>
+                My goal is to become a full-stack developer and I'd love to work with you on your project.
+                <a href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- Github Info -->
+    <div class="Row" id="GitHub">
+        <!-- Left Column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/mattsingleton2" target="_blank">Matt Singleton's GitHub</a>
+            </p>
+            </p>
+        </div>
+        <!-- Right Column -->
+        <div class="Column_2">
+            <a href="https://github.com/mattsingleton2" target="_blank"><img src="./img/github.png"
+                    alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="Row" id="Contact">
+        <!-- Contact Image, left column -- Using .Column-tall here to help formatting.-->
+        <div class="Column_2 Column_tall">
+            <img src="./img/contact.png" alt="Contact Image">
+        </div>
+        <!-- Contact Form, right column-->
+        <div class="Column_1 Column_tall">
+            <h1>Let's Work Together</h1>
+            <form action="https://formspree.io/f/myyovelj" method="POST">
+                <label>Name:</label>
+                <input type="text" placeholder="Your Name">
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Your Email">
+                <label>Message:</label>
+                <input type="text" id="Message" name="Message"
+                    placeholder="Tell me a little about yourself and how we can connect!">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+
+    </footer>
+
+</body>
+
 </html>
