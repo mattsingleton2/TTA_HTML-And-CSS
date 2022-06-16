@@ -10,12 +10,6 @@ h1 {
     color: #1a1a1a;
 }
 
-    h1:hover {
-        filter: grayscale(5%);
-        transform: scale(1.1);
-        transition: transform 1s;
-    }
-
 .white-text {
     color: white;
 }
@@ -28,19 +22,10 @@ p {
     padding-right: 20px;
 }
     
-    p:hover {
-        transition: transform 1s;
-        transform: scale(1.01);
-    }
 
 .center {
     text-align: center;
 }
-
-    .center:hover {
-        transition: transform 2s;
-        transform: scale(1.1);
-    }
 
 a {
     color: blue;
@@ -94,8 +79,8 @@ footer {
     top: 0;
     width: 100%;
     z-index: 1;
-    -webkit-animation: moveNav 5s;
-    animation: moveNav 5s;
+    -webkit-animation: moveNav 1.5s;
+    animation: moveNav 1.5s;
 }
 
     @keyframes moveNav {
@@ -113,8 +98,8 @@ footer {
         font-size: 20px;
         text-align: center;
         position: relative;
-        -webkit-animation: moveNavText 5.75s;
-        animation: moveNavText 5.75s;
+        -webkit-animation: moveNavText 1.5s;
+        animation: moveNavText 1.5s;
     }
 
     @keyframes moveNavText {
@@ -159,8 +144,8 @@ footer {
     width: 100%;
     padding: 20px;
     position: relative;
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    -webkit-animation: moveVideoText 2s;
+    animation: moveVideoText 2s;
 }
 
     @keyframes moveVideoText {
