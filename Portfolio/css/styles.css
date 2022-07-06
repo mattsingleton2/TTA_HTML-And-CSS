@@ -10,6 +10,12 @@ h1 {
     color: #1a1a1a;
 }
 
+    h1:hover {
+        filter: grayscale(5%);
+        transform: scale(1.1);
+        transition: transform 1s;
+    }
+
 .white-text {
     color: white;
 }
@@ -22,10 +28,19 @@ p {
     padding-right: 20px;
 }
     
+    p:hover {
+        transition: transform 1s;
+        transform: scale(1.01);
+    }
 
 .center {
     text-align: center;
 }
+
+    .center:hover {
+        transition: transform 2s;
+        transform: scale(1.1);
+    }
 
 a {
     color: blue;
@@ -35,7 +50,7 @@ q {
     font-style: italic;
 }
 
-.img-effect { 
+img { 
     filter: grayscale(75%);
     border-radius: 8px;
     max-width: 100%;
@@ -45,20 +60,11 @@ q {
     margin-right: auto;
 }
 
-    .img-effect:hover {
+    img:hover {
         filter:grayscale(5%);
         transition: transform 1s;
-        transform: scale(1.1) translateY(-15px);
+        transform: scale(1.1);
     }
-
-img {
-    border-radius: 8px;
-    max-width: 100%;
-    height: 340px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 @media screen and (max-width: 576px) {
     img {
@@ -79,8 +85,8 @@ footer {
     top: 0;
     width: 100%;
     z-index: 1;
-    -webkit-animation: moveNav 1.5s;
-    animation: moveNav 1.5s;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
 }
 
     @keyframes moveNav {
@@ -98,13 +104,13 @@ footer {
         font-size: 20px;
         text-align: center;
         position: relative;
-        -webkit-animation: fadeNavText 10.5s;
-        animation: fadeNavText 10.5s;
+        -webkit-animation: moveNavText 5.75s;
+        animation: moveNavText 5.75s;
     }
 
-    @keyframes fadeNavText {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
+    @keyframes moveNavText {
+        from {top: -100vw;}
+        to {top: 0vw;}
     }
 
     @media screen and (max-width: 576px) {
@@ -144,8 +150,8 @@ footer {
     width: 100%;
     padding: 20px;
     position: relative;
-    -webkit-animation: moveVideoText 2s;
-    animation: moveVideoText 2s;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
 }
 
     @keyframes moveVideoText {

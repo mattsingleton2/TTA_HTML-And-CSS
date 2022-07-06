@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="./JS/one_page_website.js" defer></script>
 </head>
 
 <body>
@@ -57,24 +58,79 @@
     <section>
         <div class="gallery" id="gallery">
             <figure>
-                <img src="./images/the date.png" alt="the date" width="400">
+                <img src="./images/the date.png" alt="the date" width="400" onclick="openModal();currentSlide(1)">
                 <figcaption>The dates...</figcaption>
             </figure>
             <figure>
-                <img src="./images/cuddles.png" alt="the cuddles" width="400">
+                <img src="./images/cuddles.png" alt="the cuddles" width="400" onclick="openModal();currentSlide(2)">
                 <figcaption>The cuddles...</figcaption>
             </figure>
             <figure>
-                <img src="./images/the family.png" alt="the family" width="400">
+                <img src="./images/the family.png" alt="the family" width="400" onclick="openModal();currentSlide(3)">
                 <figcaption>The family...</figcaption>
             </figure>
             <figure>
-                <img src="./images/the engagement.png" alt="the engagement" width="400">
+                <img src="./images/the engagement.png" alt="the engagement" width="400" onclick="openModal();currentSlide(4)">
                 <figcaption>The engagement...</figcaption>
             </figure>
         </div>
     </section>
     <!-- End Gallery -->
+
+    <!-- Modal Setup -->
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="./images/the date.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="./images/cuddles.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="./images/the family.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="./images/the engagement.png" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="./images/the date.png" onclick="currentSlide(1)" alt="The dates" style="width:40%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/cuddles.png" onclick="currentSlide(2)" alt="The cuddles" style="width:40%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/the family.png" onclick="currentSlide(3)" alt="The family" style="width:40%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="./images/the engagement.png" onclick="currentSlide(4)" alt="The engagement" style="width:40%">
+      </div>
+    </div>
+  </div>
+    <!-- End Modal Setup-->
 
     <!-- Message Us -->
     <section id="message">
